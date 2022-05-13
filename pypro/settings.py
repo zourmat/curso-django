@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'pypro.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-default_db_url = 'sqlite3:///' + os.path.join(BASE_DIR, 'db.sqlite3')
+default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 parse_database = partial(dj_database_url.parse, conn_max_age=600)
 DATABASES = {
     'default': config('DATABASE_URL', default=default_db_url, cast=parse_database)
@@ -106,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
