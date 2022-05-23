@@ -118,7 +118,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+# Configuração de ambiente de desenvolvimento
+
+STATIC_URL = 'static/' # endereço base dos arquivos estáticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # diretório onde serão colocados esses arquivos dentro do
+# Diretório do projeto
+
+# Se o site permitir o upload de arquivos, deve-se configurar essas duas variáveis
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
