@@ -120,8 +120,8 @@ USE_TZ = True
 
 # Configuração de ambiente de desenvolvimento
 
-STATIC_URL = 'static/' # endereço base dos arquivos estáticos
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # diretório onde serão colocados esses arquivos dentro do
+STATIC_URL = 'static/'  # endereço base dos arquivos estáticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # diretório onde serão colocados esses arquivos dentro do
 # Diretório do projeto
 
 # Se o site permitir o upload de arquivos, deve-se configurar essas duas variáveis
