@@ -3,8 +3,8 @@ from django.shortcuts import render
 from pypro.aperitivos.models import Video
 
 videos = [
-    Video(slug='motivacao', titulo='Vídeo Aperitivo: Motivação', vimeo_id=''),
-    Video(slug='segundo-video', titulo='Segundo Vídeo', vimeo_id='')
+    Video(slug='motivacao', titulo='Vídeo Aperitivo: Motivação', vimeo_id='4872478434'),
+    Video(slug='segundo-video', titulo='Segundo Vídeo', vimeo_id='4935039834')
 ]
 
 videos_dct = {v.slug: v for v in videos}
@@ -15,5 +15,5 @@ def indice(request):
 
 
 def video(request, slug):
-    video = videos_dct[slug]
+    video = Video.objects.get(slug=slug)
     return render(request, 'aperitivos/video.html', context={'video': video})
