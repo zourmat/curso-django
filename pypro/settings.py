@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pypro.base',
     'pypro.aperitivos',
-    'pypro.modulos'
+    'pypro.modulos',
+    'ordered_model'
 ]
 
 MIDDLEWARE = [
