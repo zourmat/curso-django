@@ -16,7 +16,6 @@ from django.utils.html import escape
 from django.utils.translation import gettext, gettext_lazy as _
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.debug import sensitive_post_parameters
-
 from pypro.base.models import User
 
 csrf_protect_m = method_decorator(csrf_protect)
