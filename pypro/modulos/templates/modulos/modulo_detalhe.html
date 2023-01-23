@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% block description %}Página com detalhes do módulo {{ modulo.titulo }}{% endblock description %}
+{% block description %}Página com detalhe do módulo {{ modulo.titulo }}{% endblock description %}
 {% block title %}{{ modulo.titulo }}{% endblock title %}
 {% block body %}
 <div class="container">
@@ -16,7 +16,7 @@
             <h2>Aulas</h2>
             <ol>
                 {% for aula in aulas %}
-                    <li>{{ aula.titulo }}</li>
+                    <li><a href="{{aula.get_absolute_url}}">{{ aula.titulo }}</a></li>
                 {% endfor %}
             </ol>
         </div>
