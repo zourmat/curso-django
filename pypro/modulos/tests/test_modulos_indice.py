@@ -1,7 +1,6 @@
 import pytest
 from django.urls import reverse
 from model_mommy import mommy
-from pypro.django_assertions import assert_contains
 from pypro.modulos.models import Modulo, Aula
 
 
